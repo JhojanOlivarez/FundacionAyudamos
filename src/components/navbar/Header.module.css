@@ -1,0 +1,92 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1400px; /* Aumentamos la anchura máxima */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 40px; /* Separamos el logo de los enlaces */
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  margin-right: auto; /* Empujamos los enlaces hacia la izquierda */
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.link:hover {
+  background-color: #f5f5f5;
+}
+
+.active {
+  background-color: #e9ecef;
+}
+
+.donateButton {
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: background-color 0.2s;
+  margin-left: 40px; /* Separamos el botón "DONÁ AHORA" de los enlaces */
+}
+
+.donateButton:hover {
+  background-color: #cc0000;
+}
+
+.burger {
+  display: none;
+}
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .donateButton {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}

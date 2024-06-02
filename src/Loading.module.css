@@ -1,0 +1,26 @@
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .logo {
+    animation: blink 1s infinite;
+    width: 20%; /* Asegura que el logo tenga un tamaño responsivo */
+    max-width: 150px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre el logo y el loader */
+  }
+  
+  /* Centrar el contenido */
+  .Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
