@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Container, Group, Burger, Button, Drawer, ScrollArea, Divider, Box, Anchor, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
-import logo from '../../assets/logo.png.avif';
+import logo from '../../assets/LogoFundation.avif';
 
 const links = [
   { link: '/Home', label: 'La Fundacion' },

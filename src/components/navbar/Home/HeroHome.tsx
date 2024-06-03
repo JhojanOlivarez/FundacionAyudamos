@@ -1,6 +1,5 @@
 
 import { Overlay, Container, Title, Button, Text } from "@mantine/core";
-import { useMediaQuery } from '@mantine/hooks';
 import classes from "./HeroHome.module.css";
 
  function HeroHome() {

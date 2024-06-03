@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Center, Image, Loader } from '@mantine/core';
 import styles from './Loading.module.css';
-import logo from '../src/assets/logo.png.avif'; // Asegúrate de que la extensión sea correcta
+import logo from '../src/assets/LogoFundation.avif'; // Asegúrate de que la extensión sea correcta
 
 const Loading: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);

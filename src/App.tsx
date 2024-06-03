@@ -4,6 +4,9 @@ import Loading from './Loading';
 import HeroHome from './components/navbar/Home/HeroHome';
 import SocialNav from './components/navbar/Home/SocialNav';
 import Footer from './components/navbar/Footer';
+import AboutHome from './components/AboutHome';
+import CoreValues from './components/CoreValues';
+
 import '@mantine/core/styles.css';
 
 const App = () => {
@@ -12,6 +15,8 @@ const App = () => {
       <Loading />
       <Header />
       <HeroHome />
+      <AboutHome />
+      <CoreValues />
       <SocialNav />
       <Footer />
     </div>
