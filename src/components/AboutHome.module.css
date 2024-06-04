@@ -5,15 +5,16 @@
   }
   
   .title {
-    color: #1c7ed6;
+    color: #177ca8;
     font-weight: 700;
     margin-bottom: 48px;
     text-align: center;
     padding: 20px;
+    font-size: 3rem;
   }
   
   .subtitle {
-    color: #228be6;
+    color: #177ca8;
     font-weight: 600;
     margin-bottom: 24px;
   }
@@ -48,7 +49,7 @@
   }
   
   .sectionTitle {
-    color: #1c7ed6;
+    color: #177ca8;
     font-weight: 700;
     margin-bottom: 48px;
     padding: 20px;
@@ -72,13 +73,13 @@
   }
   
   .valueIcon {
-    background-color: #228be6;
+    background-color: #177ca8;
     color: #fff;
     margin-bottom: 24px;
   }
   
   .valueTitle {
-    color: #1c7ed6;
+    color: #177ca8;
     font-weight: 600;
     margin-bottom: 16px;
   }

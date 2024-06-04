@@ -7,15 +7,15 @@
 }
 
 .title {
-  color: #0d47a1; /* Dark blue color for titles */
+  color: #177ca8; /* Dark blue color for titles */
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: 15rem;
+  font-size: 4rem;
 }
 
 .subtitle {
-  color: #1565c0; /* Medium blue color for subtitles */
+  color: #177ca8; /* Medium blue color for subtitles */
   font-weight: 600;
   margin-bottom: 2rem;
   text-align: center;
@@ -40,7 +40,7 @@
 .valueCircle {
   width: 80px;
   height: 80px;
-  background-color: #1976d2; /* Circle background matching the logo color */
+  background-color: #bae0eb; /* Circle background matching the logo color */
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -51,10 +51,11 @@
 
 .valueIcon {
   font-size: 2rem;
+  background-color: #177ca8;
 }
 
 .valueTitle {
-  color: #0d47a1;
+  color: #177ca8;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -73,16 +74,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .approachIcon {
-  background-color: #1976d2;
+  background-color: #177ca8;
   color: #ffffff;
   margin-bottom: 1rem;
+  align-items: center;
+
 }
 
 .approachTitle {
-  color: #0d47a1;
+  color: #177ca8;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }

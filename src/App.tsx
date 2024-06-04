@@ -7,8 +7,6 @@ import Footer from './components/navbar/Footer';
 import AboutHome from './components/AboutHome';
 import CoreValues from './components/CoreValues';
 
-import '@mantine/core/styles.css';
-
 const App = () => {
   return (
     <div>

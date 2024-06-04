@@ -70,7 +70,7 @@ function CoreValues() {
           <Text className={styles.subtitle}>
             En ECF, abordamos los desafíos sociales a través de una metodología integral que incluye:
           </Text>
-          <Grid className={styles.approachGrid} gutter={40}>
+          <Grid className={styles.approachGrid} gutter={30}>
             {approachItems.map((item, index) => (
               <Grid.Col span={{ xs: 12, sm: 6, md: 3 }} key={index}>
                 <motion.div
@@ -80,7 +80,7 @@ function CoreValues() {
                   variants={variants}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                 >
-                  <ThemeIcon size="xl" radius="md" className={styles.approachIcon}>
+                  <ThemeIcon size="xl" radius="md" className={styles.approachIcon}  color="lime.4" autoContrast>
                     {item.icon}
                   </ThemeIcon>
                   <Title className={styles.approachTitle} order={3}>
