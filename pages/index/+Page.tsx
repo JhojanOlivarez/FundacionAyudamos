@@ -1,12 +1,12 @@
-// AboutHome.js
-import { Container, Title, Text, Grid, ThemeIcon } from "@mantine/core";
+import { Title, Grid, ThemeIcon, Container, Text } from "@mantine/core";
 import { FaLightbulb, FaEye } from "react-icons/fa";
-import Logo from '../assets/LogoFundation.avif';
+import Logo from '@/assets/LogoFundation.avif';
 import classes from "./AboutHome.module.css";
 
-function AboutHome() {
+
+export default function Page() {
   return (
-    <div className={classes.wrapper}>
+ <div className={classes.wrapper}>
       <Container size="lg">
         <Title className={classes.title} order={1}>Quiénes Somos</Title>
         <Grid gutter={80} justify="center" align="center">
@@ -55,5 +55,3 @@ function AboutHome() {
     </div>
   );
 }
-
-export default AboutHome;

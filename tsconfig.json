@@ -1,25 +1,35 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "types": [
+      "vite/client",
+      "vike-react"
+    ],
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
   },
-  "include": ["src", "postcss.config.cjs"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": [
+    "dist"
+  ]
 }
