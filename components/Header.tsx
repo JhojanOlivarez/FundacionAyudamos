@@ -3,10 +3,11 @@ import { Container, Group, Burger, Button, Drawer, ScrollArea, Divider, Box, Anc
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
 import logo from '@/assets/LogoFundation.avif';
+import BannerDonation from './home/BannerDonation';
 
 const links = [
-  { link: '/Home', label: 'La Fundacion' },
-  { link: '/Nosotros', label: 'Nosotros' },
+  { link: '/', label: 'La Fundacion' },
+  { link: '/about', label: 'Nosotros' },
   { link: '/Comunidad', label: 'Comunidad' },
   { link: '/Comoayudar', label: 'Cómo Ayudar' },
 ];
@@ -14,6 +15,7 @@ const links = [
 export function Header() {
   const [opened, { open, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
+  const [showDonationBanner, setShowDonationBanner] = useState(false);
 
   const items = links.map((link) => (
     <a
@@ -30,47 +32,58 @@ export function Header() {
     </a>
   ));
 
-  return (
-    <header className={classes.header}>
-      <Container size="xl" className={classes.inner}>
-        <div className={classes.logoContainer}>
-          <img src={logo} alt="Logo" className={classes.logo} />
-        </div>
-        <Group  className={classes.links}>
-          {items}
-        </Group>
-        <Button className={classes.donateButton}>DONÁ AHORA</Button>
-        <Burger opened={opened} onClick={open} className={classes.burger} size="sm" />
-      </Container>
+  const handleDonateBtnClick = () => {
+    setShowDonationBanner(true);
+  };
 
-      <Drawer
-        opened={opened}
-        onClose={close}
-        title="Menú"
-        padding="md"
-        size="full"
-        styles={{
-          header: {
-            backgroundColor: 'white',
-            borderBottom: '1px solid #e9ecef',
-          },
-      
-        }}
-      >
-        <ScrollArea style={{ height: 'calc(100vh - 60px)' }} mx="-md">
-          <Divider my="sm" color="#e9ecef" />
-          <Box>{items}</Box>
-          <Divider my="sm" color="#e9ecef" />
-          <Text size="sm" fw={500} className={classes.section}>
-            Ayuda
-          </Text>
-          <Box>
-            <Anchor className={classes.link}>Centro de ayuda</Anchor>
-            <Anchor className={classes.link}>Blog</Anchor>
-          </Box>
-        </ScrollArea>
-      </Drawer>
-    </header>
+  const handleCloseDonationBanner = () => {
+    setShowDonationBanner(false);
+  };
+
+  return (
+    <>
+      <header className={classes.header}>
+        <Container size="xl" className={classes.inner}>
+          <div className={classes.logoContainer}>
+            <img src={logo} alt="Logo" className={classes.logo} />
+          </div>
+          <Group className={classes.links}>{items}</Group>
+          <Button className={classes.donateButton} onClick={handleDonateBtnClick}>
+            DONÁ AHORA
+          </Button>
+          <Burger opened={opened} onClick={open} className={classes.burger} size="sm" />
+        </Container>
+
+        <Drawer
+          opened={opened}
+          onClose={close}
+          title="Menú"
+          padding="md"
+          size="full"
+          styles={{
+            header: {
+              backgroundColor: 'white',
+              borderBottom: '1px solid #e9ecef',
+            },
+          }}
+        >
+          <ScrollArea style={{ height: 'calc(100vh - 60px)' }} mx="-md">
+            <Divider my="sm" color="#e9ecef" />
+            <Box>{items}</Box>
+            <Divider my="sm" color="#e9ecef" />
+            <Text size="sm" fw={500} className={classes.section}>
+              Ayuda
+            </Text>
+            <Box>
+              <Anchor className={classes.link}>Centro de ayuda</Anchor>
+              <Anchor className={classes.link}>Blog</Anchor>
+            </Box>
+          </ScrollArea>
+        </Drawer>
+      </header>
+
+      {/* <BannerDonation opened={showDonationBanner} onClose={handleCloseDonationBanner} /> */}
+    </>
   );
 }
 

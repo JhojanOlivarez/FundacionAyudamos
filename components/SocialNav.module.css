@@ -1,0 +1,76 @@
+.socialNav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .iconContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .tooltip {
+    position: absolute;
+    right: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .iconContainer:hover .tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .iconContainer:hover .icon {
+    transform: scale(1.2);
+  }
+  
+  .twitter .icon {
+    background-color: #1DA1F2;
+  }
+  
+  .twitter:hover .icon {
+    background-color: #0c8de4;
+  }
+  
+  .youtube .icon {
+    background-color: #FF0000;
+  }
+  
+  .youtube:hover .icon {
+    background-color: #cc0000;
+  }
+  
+  .instagram .icon {
+    background-color: #E1306C;
+  }
+  
+  .instagram:hover .icon {
+    background-color: #b02153;
+  }
+  

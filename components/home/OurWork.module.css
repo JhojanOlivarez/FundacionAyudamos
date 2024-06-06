@@ -1,0 +1,62 @@
+.container {
+    padding: 40px 0;
+  }
+  
+  .mainTitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1c2e4a;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .workButton {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .image {
+    border-radius: 16px;
+    width: 100%;
+  }
+  
+  .workTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1c2e4a;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 32px;
+  }
+  
+  .viewAllButton {
+    display: block;
+    margin-top: 16px;
+    color: #e53e3e;
+    border-color: #e53e3e;
+  }
+  
+  @media (max-width: 768px) {
+    .mainTitle {
+      font-size: 28px;
+    }
+    .workTitle {
+      font-size: 24px;
+    }
+    .description {
+      font-size: 16px;
+    }
+  }
+  

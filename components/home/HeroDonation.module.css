@@ -1,0 +1,71 @@
+.heroSection {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .contentContainer {
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+  
+  .donateButton {
+    background-color: #1e90ff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  .donateButton:hover {
+    background-color: #1c75d8;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .subtitle {
+      font-size: 18px;
+    }
+  }
+  

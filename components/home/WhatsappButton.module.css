@@ -1,0 +1,77 @@
+.whatsappButtonContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsappButton {
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .whatsappButton:hover {
+    background-color: #1ebea5;
+  }
+  
+  .whatsappChatContainer {
+    width: 300px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .whatsappChatHeader {
+    background-color: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .whatsappIcon {
+    margin-left: 10px;
+  }
+  
+  .closeIcon {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .whatsappChatBody {
+    padding: 10px;
+  }
+  
+  .whatsappChatBody p {
+    margin-bottom: 10px;
+  }
+  
+  .companyName {
+    color: #177ca8;
+  }
+  
+  .sendButton {
+    background-color: #25d366;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .sendButton:hover {
+    background-color: #1ebea5;
+  }
+  
