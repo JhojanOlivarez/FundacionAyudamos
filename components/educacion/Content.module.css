@@ -1,0 +1,173 @@
+.wrapper {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #49c210 90%, #f10505 75%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+ 
+  }
+  
+  .mainTitle {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .subtitle {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ffffff;
+    line-height: 1.6;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .educationGrid {
+    margin-top: 30px;
+  }
+  
+  .educationCard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .educationCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imageWrapper {
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .educationImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .educationCard:hover .educationImage {
+    transform: scale(1.1);
+  }
+  
+  .cardContent {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .badge {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    background-color: #FFD700;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .educationTitle {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .educationText {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+  }
+  
+  .educationButton {
+    background-color: #088bf7;
+    color: white;
+    border-color: #088bf7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .educationButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .generalButton {
+    background-color: #f70808;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .generalButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .modalLogo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .modalButton {
+    background-color: #fa0909;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .modalButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

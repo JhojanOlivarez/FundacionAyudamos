@@ -1,6 +1,7 @@
 import { TextInput, Textarea, SimpleGrid, Group, Title, Button, Container } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import styles from './ContactUs.module.css';
 
 function ContactUs() {
@@ -12,38 +13,49 @@ function ContactUs() {
       message: '',
     },
     validate: {
-      name: (value) => value.trim().length < 2,
-      email: (value) => !/^\S+@\S+$/.test(value),
-      subject: (value) => value.trim().length === 0,
+      name: (value) => value.trim().length < 2 ? 'El nombre debe tener al menos 2 caracteres' : null,
+      email: (value) => !/^\S+@\S+$/.test(value) ? 'El correo no es válido' : null,
+      subject: (value) => value.trim().length === 0 ? 'El asunto es obligatorio' : null,
     },
   });
 
   return (
-
     <Container size="md" className={styles.container}>
-      <Title order={2} className={styles.title}>
-        Danos una Opinion
-      </Title>
-      <form onSubmit={form.onSubmit(() => {})} className={styles.form}>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Title order={2} className={styles.title}>
+          Danos una Opinión
+        </Title>
+      </motion.div>
+      <motion.form 
+        onSubmit={form.onSubmit(() => {})} 
+        className={styles.form}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
           <TextInput
-            label="Name"
-            placeholder="Your name"
+            label="Nombre"
+            placeholder="Tu nombre"
             name="name"
             variant="filled"
             {...form.getInputProps('name')}
           />
           <TextInput
-            label="Email"
-            placeholder="Your email"
+            label="Correo Electrónico"
+            placeholder="Tu correo"
             name="email"
             variant="filled"
             {...form.getInputProps('email')}
           />
         </SimpleGrid>
         <TextInput
-          label="Subject"
-          placeholder="Subject"
+          label="Asunto"
+          placeholder="Asunto"
           mt="md"
           name="subject"
           variant="filled"
@@ -51,8 +63,8 @@ function ContactUs() {
         />
         <Textarea
           mt="md"
-          label="Message"
-          placeholder="Your message"
+          label="Mensaje"
+          placeholder="Tu mensaje"
           maxRows={10}
           minRows={5}
           autosize
@@ -60,16 +72,19 @@ function ContactUs() {
           variant="filled"
           {...form.getInputProps('message')}
         />
-        <Group align="center" mt="xl">
+        <Group ta="center" mt="xl">
           <Button type="submit" size="md" className={styles.button}>
             Enviar Mensaje
           </Button>
-          <FaFacebook className={styles.socialIcon} />
-          <FaInstagram className={styles.socialIcon} />
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className={styles.socialIcon} />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className={styles.socialIcon} />
+          </a>
         </Group>
-      </form>
+      </motion.form>
     </Container>
-
   );
 }
 

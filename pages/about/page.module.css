@@ -1,112 +1,147 @@
-/* AboutHome.module.css */
-.wrapper {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-  }
-  
+.topSection {
+  background: linear-gradient(135deg, #ffffff 90%, #03266b 45%);
+  padding: 6rem 0;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #1a3b5d;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.foundationName {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.text {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.logo {
+  max-width: 80%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+}
+
+.logoText {
+  color: #1a3b5d;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.9rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.valuesSection {
+  margin-top: 6rem;
+}
+
+.valueItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.valueItem:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.valueIcon {
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.valueItem:hover .valueIcon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.valueTitle {
+  color: #1a3b5d;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.valueText {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.coreValuesSection {
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
   .title {
-    color: #177ca8;
-    font-weight: 700;
-    margin-bottom: 48px;
-    text-align: center;
-    padding: 20px;
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
-  
-  .subtitle {
-    color: #177ca8;
-    font-weight: 600;
-    margin-bottom: 24px;
+
+  .foundationName {
+    font-size: 2.2rem;
   }
-  
-  .text {
-    color: #495057;
-    font-size: 18px;
-    line-height: 1.6;
+
+  .text, .valueText {
+    font-size: 1rem;
   }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .imageWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .logo {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .valuesSection {
-    margin-top: 80px;
-  }
-  
-  .sectionTitle {
-    color: #177ca8;
-    font-weight: 700;
-    margin-bottom: 48px;
-    padding: 20px;
-  }
-  
+
   .valueItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 32px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    height: 100%;
+    margin-bottom: 2rem;
   }
-  
-  .valueItem:hover {
-    transform: translateY(-10px);
-  }
-  
-  .valueIcon {
-    background-color: #177ca8;
-    color: #fff;
-    margin-bottom: 24px;
-  }
-  
-  .valueTitle {
-    color: #177ca8;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  
-  .valueText {
-    color: #495057;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .valueList {
-    list-style-type: disc;
-    padding-left: 24px;
-    text-align: left;
-  }
-  
-  @media (max-width: 768px) {
-    .text {
-      font-size: 16px;
-    }
-    
-    .valueItem {
-      margin-bottom: 32px;
-    }
-  }
-
-
-  .coreValuesSection {
-    margin-top: 80px;
-  }
+}

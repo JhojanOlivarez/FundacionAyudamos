@@ -1,62 +1,122 @@
 .container {
-    padding: 40px 0;
-  }
-  
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #ffffff, #ffffff);
+}
+
+.mainTitle {
+  font-size: 60px;
+  font-weight: 900;
+  color: #1c2e4a;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: color 0.3s ease;
+}
+
+.mainTitle:hover {
+  color: #ff9800;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.workButton {
+  flex: 1;
+  min-width: 180px;
+}
+
+.image {
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.workTitle {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1c2e4a;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 22px;
+  color: #4a5568;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.learnMoreLink {
+  text-decoration: none;
+}
+
+.learnMoreButton {
+  background-color: #ff4d4d;
+  color: #fff;
+  border-color: #ff4d4d;
+  font-size: 20px;
+  padding: 20px 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background-color: #ff3333;
+  border-color: #ff3333;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
   .mainTitle {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1c2e4a;
-    text-align: center;
-    margin-bottom: 32px;
+    font-size: 48px;
   }
-  
-  .buttonsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 32px;
+  .workTitle {
+    font-size: 30px;
   }
-  
-  .workButton {
-    flex: 1;
-    min-width: 150px;
+  .description {
+    font-size: 20px;
   }
-  
-  .image {
-    border-radius: 16px;
-    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 40px;
   }
-  
   .workTitle {
     font-size: 28px;
-    font-weight: 700;
-    color: #1c2e4a;
-    margin-bottom: 16px;
   }
-  
   .description {
     font-size: 18px;
-    color: #4a5568;
-    margin-bottom: 32px;
   }
-  
-  .viewAllButton {
-    display: block;
-    margin-top: 16px;
-    color: #e53e3e;
-    border-color: #e53e3e;
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 32px;
   }
-  
-  @media (max-width: 768px) {
-    .mainTitle {
-      font-size: 28px;
-    }
-    .workTitle {
-      font-size: 24px;
-    }
-    .description {
-      font-size: 16px;
-    }
+  .workTitle {
+    font-size: 24px;
   }
-  
+  .description {
+    font-size: 16px;
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+  }
+
+  .workButton {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

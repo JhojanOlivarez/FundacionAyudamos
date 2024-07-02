@@ -1,81 +1,118 @@
-.section {
-    padding: 4rem 0;
-    background-color: #f8f8f8;
-  }
-  
+.wrapper {
+  background: linear-gradient(135deg, #ffcc00 90%, #ff0000 45%);
+  padding: 6rem 0;
+  color: #ffffff;
+}
+
+
+.sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.position {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #102157;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #134991;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 3;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .watermark {
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
   .sectionTitle {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: #177ca8;
+    font-size: 2.8rem;
   }
-  
+
   .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    transition: transform 0.3s ease;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
   }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  }
-  
-  .imageWrapper {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    border: 4px solid #177ca8;
-  }
-  
+
   .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 200px;
   }
-  k,kll
-  .content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1rem;
-  }
-  
+
   .name {
-    margin-bottom: 0.5rem;
-    color: #333;
-    font-weight: bold;
+    font-size: 1.3rem;
   }
-  
+
   .position {
-    color: #666;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
   }
-  
-  .social {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    color: #177ca8;
-    transition: transform 0.3s ease;
-  }
-  
-  .icon:hover {
-    transform: scale(1.2);
-  }
-  
+}

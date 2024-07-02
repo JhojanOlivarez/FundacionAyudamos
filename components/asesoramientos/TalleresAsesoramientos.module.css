@@ -1,0 +1,93 @@
+.wrapper {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffcc00 90%, #6599ff 45%);
+  }
+  
+  .mainTitle {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #030303;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #000000;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .missionGrid {
+    margin-top: 30px;
+  }
+  
+  .cardWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .workshopCard {
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center; /* Asegura que todo el contenido esté centrado */
+  }
+  
+  .iconWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .workshopIcon {
+    color: #1a3b5d;
+  }
+  
+  .workshopTitle {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .workshopText {
+    color: #666; /* Cambié el color del texto para mejor visibilidad sobre fondo blanco */
+    margin: 20px;
+    text-align: justify;
+  }
+  
+  .missionGradient {
+    height: 4px;
+    margin-top: 1rem;
+    border-radius: 2px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .workshopButtonLink {
+    text-align: center;
+  }
+  
+  .workshopButton {
+    background-color: #e53e3e;
+    color: white;
+    border-color: #e53e3e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .workshopButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  

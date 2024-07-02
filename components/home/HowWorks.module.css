@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   padding: 4rem 2rem;
-  background-color: #f8f8f8;
+
+  background: linear-gradient(135deg, #6599ff 90%, #ffcc00 75%);
 }
 
 .header {
@@ -12,16 +13,21 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: #ff9800;
 }
 
 .description {
-  font-size: 1.5rem;
-  color: #666;
+  font-size: 1.6rem;
+  color: #ffffff;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -41,27 +47,67 @@
   text-align: center;
   padding: 2rem;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
-  font-size: 4rem;
-  color: #ff9800;
+  font-size: 4.5rem;
   margin-bottom: 1.5rem;
+  transition: transform 0.5s ease;
 }
 
 .areaTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .areaDescription {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+/* Estilo para cada área con colores del logo */
+.area:nth-child(1) .icon {
+  color: #fd2000; /* Red */
+}
+
+.area:nth-child(2) .icon {
+  color: #ffcc00; /* Yellow */
+}
+
+.area:nth-child(3) .icon {
+  color: #6599ff; /* Blue */
+}
+
+/* Botón para unirse */
+.joinButton {
+  margin-top: 3rem;
+  background-color: #11284b;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joinButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Enlace sin subrayado */
+.link {
+  text-decoration: none;
 }

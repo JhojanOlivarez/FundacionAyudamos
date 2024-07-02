@@ -1,97 +1,115 @@
 .wrapper {
-    background-color: #e3f2fd; /* Light blue background for a fresh look */
+
+  background: linear-gradient(135deg, #03266b 90%, #ffcc00 45%);
+  padding: 6rem 0;
+  color: #ffffff;
+}
+
+.mainTitle, .sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.grid {
+  margin-bottom: 5rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.iconWrapper {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+.card:hover .icon {
+  transform: rotate(360deg);
+}
+
+.cardContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2.8rem;
   }
-  
-  .section {
-    padding: 4rem 2rem;
+
+  .sectionTitle {
+    font-size: 2.5rem;
   }
-  
-  .title {
-    color: #177ca8; /* Dark blue color for titles */
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 4rem;
-  }
-  
+
   .subtitle {
-    color: #177ca8; /* Medium blue color for subtitles */
-    font-weight: 600;
-    margin-bottom: 2rem;
-    text-align: center;
+    font-size: 1.2rem;
   }
-  
-  .valueGrid, .approachGrid {
-    margin-top: 2rem;
+
+  .cardTitle {
+    font-size: 1.6rem;
   }
-  
-  .valueItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .cardText {
+    font-size: 1rem;
   }
-  
-  .valueCircle {
-    width: 80px;
-    height: 80px;
-    background-color: #bae0eb; /* Circle background matching the logo color */
-    color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-  
-  .valueIcon {
-    font-size: 2rem;
-    background-color: #177ca8;
-  }
-  
-  .valueTitle {
-    color: #177ca8;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .valueText {
-    color: #424242; /* Dark gray color for text */
-  }
-  
-  .approachItem {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .approachIcon {
-    background-color: #177ca8;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    align-items: center;
-  
-  }
-  
-  .approachTitle {
-    color: #177ca8;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .approachText {
-    color: #424242; /* Dark gray color for text */
-  }
-  
+}

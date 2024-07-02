@@ -1,14 +1,18 @@
+.headerWrapper {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+}
+
 .header {
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #e9ecef;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .inner {
   width: 100%;
-  max-width: 1400px; /* Aumentamos la anchura máxima */
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,63 +22,111 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  margin-right: 40px; /* Separamos el logo de los enlaces */
+  margin-right: 40px;
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
 .links {
   display: flex;
   gap: 30px;
-  margin-right: auto; /* Empujamos los enlaces hacia la izquierda */
+  margin-right: auto;
 }
 
 .link {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 10px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.2s;
 }
 
 .link:hover {
-  background-color: #f5f5f5;
+  color: #ff6b6b;
 }
 
 .active {
-  background-color: #e9ecef;
+  color: #ff6b6b;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+.subLink {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  background-color: transparent;
+  color: #fff;
+}
+
+.programLabel {
+  color: inherit;
+}
+
+.programDescription {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.programsDropdown {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+
+.programItem:hover .iconWrapper {
+  background-color: #000000;
+}
+
+.programItem {
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  color: #fff;
+}
+
+.programItem:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .donateButton {
-  background-color: #ff0000;
+  background-color: #ff6b6b;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;
   padding: 8px 16px;
   transition: background-color 0.2s;
-  margin-left: 40px; /* Separamos el botón "DONÁ AHORA" de los enlaces */
+  margin-left: 40px;
 }
 
 .donateButton:hover {
-  background-color: #cc0000;
+  background-color: #ff4f4f;
 }
 
 .burger {
   display: none;
 }
 
-.section {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-left: 20px;
+.hiddenDesktop {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -87,6 +139,10 @@
   }
 
   .burger {
+    display: block;
+  }
+
+  .hiddenDesktop {
     display: block;
   }
 }

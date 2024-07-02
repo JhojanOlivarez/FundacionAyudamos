@@ -1,0 +1,117 @@
+.wrapper {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffcc00 90%, #2b91e6 75%);
+}
+
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #f3f3f3;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.assistanceGrid {
+  margin-top: 30px;
+}
+
+.assistanceCard {
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.assistanceImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.assistanceTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.assistanceText {
+  color: #666;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.assistanceButton {
+  background-color: #e53e3e;
+  color: white;
+  border-color: #e53e3e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assistanceButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.generalButton {
+  background-color: #6599ff;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.generalButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modalLogo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.modalButton {
+  background-color: #25D366;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modalButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+}

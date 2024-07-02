@@ -1,0 +1,60 @@
+.wrapper {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ff0000 90%, #ffcc00 45%);
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .missionGrid {
+    margin-top: 30px;
+  }
+  
+  .missionCard {
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center; /* Asegura que todo el contenido esté centrado */
+  }
+  
+  .missionIcon {
+    color: #1a3b5d;
+    margin-bottom: 1rem;
+    align-self: center; /* Centra el ícono horizontalmente */
+  }
+  
+  .missionTitle {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .missionText {
+    color: #666; /* Cambié el color del texto para mejor visibilidad sobre fondo blanco */
+  }
+  
+  .missionGradient {
+    height: 4px;
+    margin-top: 1rem;
+    border-radius: 2px;
+  }
+  
