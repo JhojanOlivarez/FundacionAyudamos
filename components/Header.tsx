@@ -66,6 +66,9 @@ export function Header() {
             <a href="/voluntariado" className={`${classes.link} ${active === '/voluntariado' ? classes.active : ''}`} onClick={() => setActive('/voluntariado')}>
               Voluntariado
             </a>
+            <a href="/comoayudar" className={`${classes.link} ${active === '/voluntariado' ? classes.active : ''}`} onClick={() => setActive('/voluntariado')}>
+              Como Ayudar
+            </a>
           
             <HoverCard width={900} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>

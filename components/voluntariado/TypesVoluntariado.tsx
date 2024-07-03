@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Card, Image, Title, Text, Button, Container, Modal, CloseButton } from '@mantine/core';
+import { Card, Image, Title, Text, Button, Container, Modal, TextInput, Textarea, CloseButton, Box, Center } from '@mantine/core';
 import styles from './TypesVoluntariado.module.css';
+import Logo from '@/assets/LogoEmpowering.avif';
 
 interface Opportunity {
   title: string;
@@ -30,23 +31,21 @@ const opportunities: Opportunity[] = [
 const TypesVoluntariado: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedOpportunity, setSelectedOpportunity] = useState<Opportunity | null>(null);
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleCardClick = (opportunity: Opportunity) => {
     setSelectedOpportunity(opportunity);
     setModalOpen(true);
   };
 
-  const handleWhatsAppClick = () => {
-    if (selectedOpportunity) {
-      const message = `Hola, quiero saber más sobre ${selectedOpportunity.title}. Estoy muy interesado en participar.`;
-      window.open(`https://wa.me/3226650405?text=${encodeURIComponent(message)}`, '_blank');
-      setModalOpen(false);
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleGeneralWhatsAppClick = () => {
-    const message = `Hola, quiero ser parte de ECF Conecta en voluntariado.`;
-    window.open(`https://wa.me/3226650405?text=${encodeURIComponent(message)}`, '_blank');
+  const handleSubmit = () => {
+    const message = `Hola, soy ${formData.name}. Mi email es ${formData.email}. Estoy interesado en el voluntariado de ${selectedOpportunity?.title}. ${formData.message}`;
+    window.open(`https://wa.me/573226650405?text=${encodeURIComponent(message)}`, '_blank');
     setModalOpen(false);
   };
 
@@ -98,7 +97,7 @@ const TypesVoluntariado: React.FC = () => {
             color="green"
             size="lg"
             className={styles.generalButton}
-            onClick={handleGeneralWhatsAppClick}
+            onClick={() => handleCardClick({ title: 'ECF Conecta', description: '', image: '' })}
           >
             Quiero Ser ECF Conecta
           </Button>
@@ -108,23 +107,47 @@ const TypesVoluntariado: React.FC = () => {
       <Modal
         opened={modalOpen}
         onClose={() => setModalOpen(false)}
-        title={`Quieres pertenecer al voluntariado ${selectedOpportunity?.title}`}
+        title={`¿Quieres pertenecer al voluntariado ${selectedOpportunity?.title}?`}
         centered
         size="md"
+        classNames={{ title: styles.modalTitle }}
       >
-        <div className={styles.modalContent}>
+        <Box className={styles.modalContent}>
           <CloseButton onClick={() => setModalOpen(false)} className={styles.closeButton} />
-          <img src="/assets/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
-          <Text size="md" ta="center">En Empowering Communities Foundation, ayudamos a toda nuestra comunidad a crecer en educación. Comunícate a nuestro WhatsApp y te daremos más información.</Text>
-          <Button
-            variant="filled"
-            color="green"
-            onClick={handleWhatsAppClick}
-            className={styles.modalButton}
-          >
-            Contactar por WhatsApp
+          <Center>
+            <Image src={Logo} alt="Logo" className={styles.modalLogo} />
+          </Center>
+          <Text className={styles.modalText}>
+            En Empowering Communities Foundation, ayudamos a toda nuestra comunidad a crecer en educación. Comunícate a nuestro WhatsApp y te daremos más información.
+          </Text>
+          <TextInput
+            label="Nombre"
+            placeholder="Tu nombre"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <TextInput
+            label="Email"
+            placeholder="Tu email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <Textarea
+            label="Mensaje"
+            placeholder="¿Por qué quieres ser voluntario?"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+          <Button fullWidth className={styles.modalButton} onClick={handleSubmit}>
+            Enviar solicitud
           </Button>
-        </div>
+        </Box>
       </Modal>
     </Container>
   );

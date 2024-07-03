@@ -1,0 +1,131 @@
+.wrapper {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #2b91e6 90%, #ff0000 75%);
+}
+
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.mainTitle::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #e53e3e;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.mainDescription {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #000000;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.grid {
+  margin-top: 30px;
+}
+
+.story {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.story:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.storyImageWrapper {
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.storyImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.story:hover .storyImage {
+  transform: scale(1.05);
+}
+
+.storyTitle {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+}
+
+.storyText {
+  color: #666;
+  margin-bottom: 20px;
+  text-align: justify;
+  flex-grow: 1;
+}
+.volunteerButton {
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin: 2rem auto 0;
+  display: block;
+}
+
+.volunteerButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 230, 2, 0.2);
+  background-color: #ec1111; /* Cambia el color de fondo a amarillo */
+}
+
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+
+  .mainDescription {
+    font-size: 1rem;
+  }
+
+  .storyImage {
+    height: 150px;
+  }
+
+  .storyTitle {
+    font-size: 1.3rem;
+  }
+
+  .storyText {
+    font-size: 1rem;
+  }
+
+  .volunteerButton {
+    font-size: 1rem;
+  }
+}

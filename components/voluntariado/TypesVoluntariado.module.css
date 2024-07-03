@@ -111,11 +111,24 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding: 20px;
 }
 
 .modalLogo {
   width: 80px;
   margin-bottom: 20px;
+}
+
+.modalText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modalInput {
+  margin-bottom: 1rem;
 }
 
 .modalButton {
