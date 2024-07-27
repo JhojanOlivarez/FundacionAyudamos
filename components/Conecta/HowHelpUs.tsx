@@ -18,42 +18,42 @@ const helpOptions: HelpOption[] = [
     title: "Redes de Apoyo",
     description: "Únete a nuestras redes de apoyo y ayuda a fortalecer la colaboración y el apoyo mutuo en la comunidad.",
     buttonText: "Quiero unirme a las redes",
-    image: "/assets/programs/ECPConecta/RedesApoyo.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/RedesApoyo.avif?t=2024-07-27T19%3A07%3A09.379Z",
     icon: <FaHandsHelping />,
   },
   {
     title: "Mentorías Personalizadas",
     description: "Conviértete en mentor y guía a individuos en su desarrollo personal y profesional.",
     buttonText: "Quiero ser mentor",
-    image: "/assets/programs/ECPConecta/Mentorias.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Mentorias.avif",
     icon: <FaChalkboardTeacher />,
   },
   {
     title: "Eventos Comunitarios",
     description: "Organiza y participa en eventos comunitarios para fomentar la integración y el intercambio cultural.",
     buttonText: "Quiero organizar eventos",
-    image: "/assets/programs/ECPConecta/Eventos.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Eventos.avif?t=2024-07-27T19%3A07%3A33.691Z",
     icon: <FaUsers />,
   },
   {
     title: "Conexión con Empleadores",
     description: "Ayuda a conectar a personas en busca de empleo con empleadores potenciales.",
     buttonText: "Quiero conectar empleadores",
-    image: "/assets/programs/ECPConecta/Emprendedores.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Emprendedores.avif?t=2024-07-27T19%3A07%3A52.271Z",
     icon: <FaBriefcase />,
   },
   {
     title: "Plataformas de Desarrollo",
     description: "Contribuye al desarrollo de plataformas que mejoren habilidades y conocimientos.",
     buttonText: "Quiero contribuir",
-    image: "/assets/programs/ECPConecta/Plataformas.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Plataformas.avif?t=2024-07-27T19%3A08%3A12.388Z",
     icon: <FaLaptopCode />,
   },
   {
     title: "Grupos de Interés",
     description: "Forma parte de grupos de interés y fomenta el intercambio de ideas y proyectos en común.",
     buttonText: "Quiero unirme a un grupo",
-    image: "/assets/programs/ECPConecta/Gruposinteres.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/GruposInteres.avif?t=2024-07-27T19%3A08%3A22.673Z",
     icon: <FaProjectDiagram />,
   },
 ];
@@ -164,7 +164,7 @@ const HowHelpUs: React.FC = () => {
             setModalOpen(false);
             setGeneralModalOpen(false);
           }} className={styles.closeButton} />
-          <img src="/assets/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
+          <img src="https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
           <Text size="md" ta="center">
             En Empowering Communities Foundation, ayudamos a toda nuestra comunidad a crecer en educación. Comunícate a nuestro WhatsApp y te daremos más información.
           </Text>

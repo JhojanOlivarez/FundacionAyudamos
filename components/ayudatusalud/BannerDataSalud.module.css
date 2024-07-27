@@ -1,0 +1,77 @@
+.banner {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff3e0, #e1f5fe);
+    text-align: center;
+  }
+  
+  .bannerTitle {
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .steps {
+    margin-top: 40px;
+  }
+  
+  .step {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .iconBox {
+    margin-bottom: 20px;
+  }
+  
+  .stepTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stepDescription {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .ctaSection {
+    margin-top: 40px;
+  }
+  
+  .ctaButton {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #e64a19;
+  }
+  

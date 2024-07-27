@@ -15,37 +15,37 @@ const educationPrograms: EducationProgram[] = [
   {
     title: "Becas Educativas",
     description: "Proporcionamos becas para estudiantes destacados que necesitan apoyo financiero para continuar su educación.",
-    image: "/assets/programs/ECPEducacion/Becas.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/Becas.avif?t=2024-07-27T18%3A58%3A33.279Z",
     badge: "Oportunidad",
   },
   {
     title: "Programas de Tutoría",
     description: "Ofrecemos tutorías personalizadas para ayudar a los estudiantes a alcanzar su máximo potencial académico.",
-    image: "/assets/programs/ECPEducacion/Tutorias.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/Tutorias.avif?t=2024-07-27T18%3A58%3A43.327Z",
     badge: "Apoyo",
   },
   {
     title: "Cursos de Desarrollo Personal",
     description: "Organizamos cursos que fortalecen habilidades blandas como la comunicación, el liderazgo y la resolución de conflictos.",
-    image: "/assets/programs/ECPEducacion/Cursos.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/Cursos.avif?t=2024-07-27T18%3A58%3A54.217Z",
     badge: "Crecimiento",
   },
   {
     title: "Capacitación Técnica",
     description: "Proveemos capacitación técnica en diversas áreas para mejorar la empleabilidad de los jóvenes.",
-    image: "/assets/programs/ECPEducacion/CapacitacionTecnica.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/CapacitacionTecnica.avif?t=2024-07-27T18%3A59%3A05.138Z",
     badge: "Futuro",
   },
   {
     title: "Acceso a Tecnología",
     description: "Facilitamos el acceso a herramientas tecnológicas y cursos de informática para preparar a los estudiantes para el mundo digital.",
-    image: "/assets/programs/ECPEducacion/AccesoTecnologia.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/AccesoTecnologia.avif?t=2024-07-27T18%3A59%3A18.429Z",
     badge: "Innovación",
   },
   {
     title: "Apoyo Psicológico",
     description: "Brindamos apoyo psicológico para asegurar el bienestar emocional y mental de los estudiantes.",
-    image: "/assets/programs/ECPEducacion/PsicologicoApoyo.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/PsicologicoApoyo.avif?t=2024-07-27T18%3A59%3A32.106Z",
     badge: "Bienestar",
   },
 ];
@@ -150,9 +150,9 @@ const ECFEducation: React.FC = () => {
       >
         <div className={styles.modalContent}>
           <CloseButton onClick={() => setModalOpen(false)} className={styles.closeButton} />
-          <img src="/assets/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
+          <img src="https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
           <Text size="md" ta="center">
-            {selectedProgram ? `En Empowering ayudamos a toda nuestra comunidad a crecer en educación. Comunicate a nuestro WhatsApp y te daremos más información sobre <strong>${selectedProgram.title}</strong>.` : ''}
+            {selectedProgram ? `En Empowering ayudamos a toda nuestra comunidad a crecer en educación. Comunicate a nuestro WhatsApp y te daremos más información sobre ${selectedProgram.title}.` : ''}
           </Text>
           <Button
             variant="filled"

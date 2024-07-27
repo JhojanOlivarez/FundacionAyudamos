@@ -56,7 +56,7 @@ const BannerDonation: React.FC<BannerDonationProps> = ({ opened, onClose }) => {
             <Grid.Col span={{ base: 12, md: 6 }}>
               <div className={classes.content}>
                 <Image
-                  src="/assets/NinosEscasos.avif"
+                  src="https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Home/NinosEscasos.avif?t=2024-07-27T18%3A21%3A30.565Z"
                   alt="Child"
                   className={classes.image}
                 />

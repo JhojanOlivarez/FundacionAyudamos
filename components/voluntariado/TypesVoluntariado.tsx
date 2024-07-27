@@ -14,17 +14,17 @@ const opportunities: Opportunity[] = [
   {
     title: 'Voluntariado en Educación',
     description: 'Ayuda a mejorar el acceso a la educación en comunidades desfavorecidas a través de tutorías y programas de becas.',
-    image: '/assets/voluntariado/VoluntariadoEducacion.avif',
+    image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Voluntariado/VoluntariadoEducacion.avif?t=2024-07-27T18%3A37%3A23.372Z',
   },
   {
     title: 'Voluntariado en Salud',
     description: 'Participa en campañas de salud y bienestar, proporcionando acceso a consultas médicas y educación en salud.',
-    image: '/assets/voluntariado/VoluntariadoSalud.avif',
+    image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Voluntariado/VoluntariadoSalud.avif?t=2024-07-27T18%3A37%3A36.867Z',
   },
   {
     title: 'Voluntariado en Asistencia Social',
     description: 'Apoya a personas en situaciones de vulnerabilidad proporcionando asistencia integral y recursos esenciales.',
-    image: '/assets/voluntariado/VoluntariadoAsistenciaSocial.avif',
+    image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Voluntariado/VoluntariadoAsistenciaSocial.avif?t=2024-07-27T18%3A37%3A12.749Z',
   },
 ];
 

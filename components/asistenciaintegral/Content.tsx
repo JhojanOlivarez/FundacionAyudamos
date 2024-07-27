@@ -14,32 +14,32 @@ const assistanceServices: AssistanceService[] = [
   {
     title: "Apoyo Emocional y Psicológico",
     text: "Terapias gratuitas, grupos de apoyo, líneas de ayuda emocional disponibles para todas las personas en situación de vulnerabilidad. Estos servicios están diseñados para proporcionar apoyo emocional y psicológico a aquellos que lo necesitan.",
-    image: "/assets/programs/EcpAsistenciaIntegral/ApoyoPsicologico.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpAsistenciaIntegral/ApoyoPsicologico.avif?t=2024-07-27T18%3A48%3A00.817Z",
   },
   {
     title: "Asistencia Alimentaria",
     text: "Bancos de alimentos y programas de nutrición que aseguran el acceso a comidas nutritivas y calientes. Nos enfocamos en garantizar que todas las personas tengan acceso a alimentos básicos y saludables.",
-    image: "/assets/programs/EcpAsistenciaIntegral/Ayudaalimentaria.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpAsistenciaIntegral/Ayudaalimentaria.avif?t=2024-07-27T18%3A48%3A13.174Z",
   },
   {
     title: "Ayuda en Vivienda",
     text: "Apoyo para encontrar vivienda, refugios temporales y asistencia en casos de desalojo. Trabajamos para proporcionar soluciones habitacionales a quienes se enfrentan a la falta de vivienda.",
-    image: "/assets/programs/EcpAsistenciaIntegral/Ayudavivienda.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpAsistenciaIntegral/Ayudavivienda.avif?t=2024-07-27T18%3A48%3A29.510Z",
   },
   {
     title: "Asesoramiento Legal",
     text: "Consultas legales gratuitas y talleres sobre derechos laborales y de vivienda. Brindamos orientación y asistencia legal para ayudar a las personas a comprender y ejercer sus derechos.",
-    image: "/assets/programs/EcpAsistenciaIntegral/AsesoramientoLegal.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpAsistenciaIntegral/AsesoramientoLegal.avif?t=2024-07-27T18%3A48%3A42.014Z",
   },
   {
     title: "Educación y Capacitación",
     text: "Programas de alfabetización, cursos de habilidades técnicas y capacitación laboral para mejorar oportunidades de empleo. Nuestro objetivo es empoderar a las personas a través de la educación y el desarrollo de habilidades.",
-    image: "/assets/programs/EcpAsistenciaIntegral/ApoyoEducativo.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpAsistenciaIntegral/ApoyoEducativo.avif?t=2024-07-27T18%3A48%3A57.605Z",
   },
   {
     title: "Redes de Apoyo y Contacto",
     text: "Eventos comunitarios y redes de colaboración para fortalecer la comunidad y el apoyo mutuo. Fomentamos un sentido de comunidad y colaboración entre los miembros de la comunidad.",
-    image: "/assets/programs/EcpAsistenciaIntegral/Apoyo.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpAsistenciaIntegral/Apoyo.avif?t=2024-07-27T18%3A49%3A34.088Z",
   },
 ];
 
@@ -138,7 +138,7 @@ const ECFAssistance: React.FC = () => {
       >
         <div className={styles.modalContent}>
           <CloseButton onClick={() => setModalOpen(false)} className={styles.closeButton} />
-          <img src="/assets/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
+          <img src="https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
           <Text size="md" ta="center">En Empowering Communities Foundation, ayudamos a toda nuestra comunidad a crecer en educación. Comunícate a nuestro WhatsApp y te daremos más información.</Text>
           <Button
             variant="filled"
