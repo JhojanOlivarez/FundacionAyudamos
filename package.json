@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "start": "tsx ./server-entry.ts",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -24,6 +25,7 @@
     "vite": "^5.2.11"
   },
   "dependencies": {
+    "@hono/node-server": "^1.12.0",
     "@mantine/carousel": "^7.10.1",
     "@mantine/charts": "^7.10.1",
     "@mantine/code-highlight": "^7.10.1",
@@ -47,6 +49,7 @@
     "dayjs": "^1.11.11",
     "embla-carousel-react": "^8.1.3",
     "framer-motion": "^11.2.12",
+    "hono": "^4.5.1",
     "lucide-react": "^0.400.0",
     "next": "^14.2.4",
     "react": "^18.3.1",
@@ -55,7 +58,9 @@
     "react-intersection-observer": "^9.10.3",
     "recharts": "2",
     "swiper": "^11.1.4",
+    "tsx": "^4.16.2",
     "vike": "^0.4.172",
     "vike-react": "^0.4.10"
-  }
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
