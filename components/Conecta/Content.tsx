@@ -14,32 +14,32 @@ const connectPrograms: ConnectProgram[] = [
   {
     title: "Redes de Apoyo",
     description: "Creamos redes de apoyo entre la comunidad para fortalecer la colaboración y el apoyo mutuo.",
-    image: "/assets/programs/ECPConecta/RedesApoyo.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/RedesApoyo.avif?t=2024-07-27T19%3A07%3A09.379Z",
   },
   {
     title: "Mentorías Personalizadas",
     description: "Ofrecemos programas de mentoría personalizada para el desarrollo personal y profesional.",
-    image: "/assets/programs/ECPConecta/Mentorias.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Mentorias.avif",
   },
   {
     title: "Eventos Comunitarios",
     description: "Organizamos eventos comunitarios para promover la integración y el intercambio cultural.",
-    image: "/assets/programs/ECPConecta/Eventos.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Eventos.avif?t=2024-07-27T19%3A07%3A33.691Z",
   },
   {
     title: "Conexión con Empleadores",
     description: "Facilitamos la conexión entre empleadores y personas en busca de empleo, promoviendo oportunidades laborales.",
-    image: "/assets/programs/ECPConecta/Emprendedores.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Emprendedores.avif?t=2024-07-27T19%3A07%3A52.271Z",
   },
   {
     title: "Plataformas de Desarrollo",
     description: "Ofrecemos acceso a plataformas de desarrollo personal y profesional para mejorar habilidades y conocimientos.",
-    image: "/assets/programs/ECPConecta/Plataformas.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/Plataformas.avif?t=2024-07-27T19%3A08%3A12.388Z",
   },
   {
     title: "Grupos de Interés",
     description: "Creamos grupos de interés para fomentar el intercambio de ideas y proyectos en común.",
-    image: "/assets/programs/ECPConecta/Gruposinteres.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/GruposInteres.avif?t=2024-07-27T19%3A08%3A22.673Z",
   },
 ];
 
@@ -154,7 +154,7 @@ const ECFConecta: React.FC = () => {
             setModalOpen(false);
             setGeneralModalOpen(false);
           }} className={styles.closeButton} />
-          <img src="/assets/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
+          <img src="https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
           <Text size="md" ta="center">
             En Empowering Communities Foundation, ayudamos a toda nuestra comunidad a crecer en educación. Comunícate a nuestro WhatsApp y te daremos más información.
           </Text>

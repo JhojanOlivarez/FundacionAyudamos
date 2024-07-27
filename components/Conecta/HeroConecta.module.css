@@ -2,7 +2,7 @@
     background-color: #11284b;
     background-size: cover;
     background-position: center;
-    background-image: url('/assets/programs/EcpConecta/EcpConecta.avif');
+    background-image: url('https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpConecta/EcpConecta.avif?t=2024-07-27T19%3A08%3A48.355Z');
     background-attachment: fixed;
     position: relative;
     padding-top: calc(var(--mantine-spacing-xl) * 3);

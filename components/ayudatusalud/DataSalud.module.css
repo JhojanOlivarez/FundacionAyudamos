@@ -1,0 +1,186 @@
+.wrapper {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f7ff 100%);
+    min-height: 100vh;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/assets/DataSalud/pattern.svg') repeat;
+    opacity: 0.05;
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .mainTitle {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0077be;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .subTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0077be;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .benefitCard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .benefitCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 119, 190, 0.2);
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #0077be;
+    text-align: center;
+  }
+  
+  .cardText {
+    color: #666;
+    text-align: center;
+    padding: 0 1rem 1rem;
+  }
+  
+  .processSection {
+    margin-top: 4rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 119, 190, 0.1);
+  }
+  
+  .stepInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .stepTitle {
+    font-size: 2rem;
+    color: #0077be;
+    margin-bottom: 1rem;
+  }
+  
+  .stepDescription {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .stepNavigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .stepButton {
+    background-color: #0077be;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .stepButton:hover {
+    background-color: #005c91;
+    transform: translateY(-3px);
+  }
+  
+  .ctaSection {
+    margin-top: 4rem;
+    text-align: center;
+    background: linear-gradient(45deg, #0077be, #00a86b);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 119, 190, 0.3);
+  }
+  
+  .ctaTitle {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .ctaButton {
+    background-color: white;
+    color: #0077be;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .mainTitle {
+      font-size: 2.5rem;
+    }
+  
+    .subTitle {
+      font-size: 2rem;
+    }
+  
+    .text {
+      font-size: 1rem;
+    }
+  
+    .stepTitle {
+      font-size: 1.5rem;
+    }
+  
+    .stepDescription {
+      font-size: 1rem;
+    }
+  
+    .ctaTitle {
+      font-size: 2rem;
+    }
+  
+    .ctaButton {
+      font-size: 1rem;
+    }
+  }

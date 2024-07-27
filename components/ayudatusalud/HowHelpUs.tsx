@@ -15,31 +15,31 @@ const helpOptions: HelpOption[] = [
     title: "Voluntariado",
     description: "Únete a nuestro equipo de voluntarios y contribuye con tu tiempo y habilidades para ayudar a la comunidad.",
     buttonText: "Quiero ser voluntario",
-    image: "/assets/programs/ECPSalud/Voluntariados.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/ECFSalud/Voluntariados.avif?t=2024-07-27T18%3A56%3A00.824Z",
   },
   {
     title: "Donaciones de Ropa",
     description: "Ayúdanos donando ropa en buen estado para quienes más lo necesitan.",
     buttonText: "Quiero donar ropa",
-    image: "/assets/programs/ECPSalud/DonarRopa.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/ECFSalud/DonarRopa.avif?t=2024-07-27T18%3A56%3A13.219Z",
   },
   {
     title: "Donaciones de Alimentos",
     description: "Contribuye con alimentos no perecederos para apoyar a las familias en situaciones de vulnerabilidad.",
     buttonText: "Quiero donar alimentos",
-    image: "/assets/programs/ECPSalud/DonarComida.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/ECFSalud/DonarComida.avif?t=2024-07-27T18%3A56%3A22.262Z",
   },
   {
     title: "Apoyo Económico",
     description: "Realiza una donación económica para apoyar nuestros programas y actividades.",
     buttonText: "Quiero donar dinero",
-    image: "/assets/programs/ECPSalud/DonarDinero.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/ECFSalud/DonarDinero.avif?t=2024-07-27T18%3A56%3A32.816Z",
   },
   {
     title: "Materiales Escolares",
     description: "Dona útiles escolares para ayudar a los niños y jóvenes en su educación.",
     buttonText: "Quiero donar útiles",
-    image: "/assets/programs/ECPSalud/DonarUtiles.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/ECFSalud/DonarUtiles.avif?t=2024-07-27T18%3A56%3A43.150Z",
   },
   {
     title: "Medicamentos",
@@ -129,7 +129,7 @@ const HowHelpUs: React.FC = () => {
       >
         <div className={styles.modalContent}>
           <CloseButton onClick={() => setModalOpen(false)} className={styles.closeButton} />
-          <img src="/assets/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
+          <img src="https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/LogoEmpowering.avif" alt="Logo" className={styles.modalLogo} />
           <Text size="md" ta="center">{selectedOption?.description}</Text>
           <Button
             variant="filled"

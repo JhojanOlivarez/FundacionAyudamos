@@ -7,31 +7,31 @@ const workOptions = [
     { 
       title: 'ECP Asesoramientos', 
       description: 'En ECP Asesoramientos, nos dedicamos a proporcionar orientación experta y personalizada a las comunidades. Nuestro objetivo es empoderar a las personas mediante el acceso a información clave, capacitación y recursos. Ya sea a través de talleres educativos, asesorías legales, o consultorías de negocio, estamos comprometidos a ayudar a cada individuo a alcanzar su máximo potencial. Con un enfoque en la inclusión y la sostenibilidad, trabajamos en estrecha colaboración con ciudadanos, ONGs, administraciones públicas, empresas y entidades educativas para asegurar que cada asesoramiento tenga un impacto positivo y duradero.', 
-      image: '/assets/OurWork/Asesora.avif',
+      image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/OurWork/Asesora.avif?t=2024-07-27T18%3A17%3A58.824Z',
       link: '/programs/asesoramientos'
     },
     { 
       title: 'ECP Asistencia Integral', 
       description: 'ECP Asistencia Integras se centra en proporcionar un apoyo integral a aquellos en situaciones de vulnerabilidad. Entendemos que la pobreza multidimensional no solo es la falta de ingresos, sino también la carencia de acceso a servicios esenciales como vivienda, salud y educación. A través de nuestro modelo integral e interdisciplinario, cubrimos no solo las necesidades básicas, sino también brindamos herramientas y recursos que permiten a las personas superar sus condicionamientos. Generamos redes de apoyo y contactos, fomentando el empoderamiento de derechos y el acceso equitativo a oportunidades.', 
-      image: '/assets/OurWork/AsistenciaIntegral.avif',
+      image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/OurWork/AsistenciaIntegral.avif?t=2024-07-27T18%3A18%3A54.472Z',
       link: '/programs/asistenciaintegral'
     },
     { 
       title: 'ECP Ayuda tu Salud', 
       description: 'En ECP Ayuda tu Salud, promovemos el acceso equitativo a servicios médicos y prácticas saludables en las comunidades. Implementamos programas de salud comunitaria que mejoran la calidad de vida y fomentan el bienestar integral. Ofrecemos campañas de prevención, acceso a consultas médicas, y programas de educación en salud que abordan tanto aspectos físicos como mentales. Nuestro compromiso es asegurar que cada individuo tenga las herramientas necesarias para llevar una vida saludable y plena.', 
-      image: '/assets/OurWork/Salud.avif',
+      image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/OurWork/Salud.avif?t=2024-07-27T18%3A19%3A27.748Z',
       link: '/programs/ayudatusalud'
     },
     { 
       title: 'ECP Educación', 
       description: 'ECP Educación se dedica a mejorar el acceso y la calidad de la educación en comunidades desfavorecidas. Creemos que la educación es la clave para el desarrollo sostenible y la equidad social. A través de iniciativas que incluyen becas, programas de tutoría, y acceso a tecnologías educativas, buscamos cerrar las brecha educativa y proporcionar a los jóvenes las oportunidades necesarias para prosperar. Fomentamos un ambiente de aprendizaje inclusivo y diverso que prepara a los estudiantes para los desafíos del futuro.', 
-      image: '/assets/OurWork/Education.avif',
+      image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/OurWork/Education.avif?t=2024-07-27T18%3A19%3A45.161Z',
       link: '/programs/educacion'
     },
     { 
       title: 'ECP Conecta', 
       description: 'ECP Conecta es nuestro programa de integración social que busca crear redes de colaboración y apoyo en la comunidad. Facilitamos el acceso a recursos, contactos y oportunidades que pueden transformar vidas. Ya sea conectando a individuos con potenciales empleadores, facilitando la participación en actividades comunitarias, o proporcionando acceso a plataformas de desarrollo personal, ECP Conecta trabaja para romper las barreras de la exclusión social. Promovemos la inclusión y el respeto por la diversidad.', 
-      image: '/assets/OurWork/Conect2.avif',
+      image: 'https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/OurWork/Conect2.avif?t=2024-07-27T18%3A19%3A47.542Z',
       link: '/programs/conecta'
     },
 ];

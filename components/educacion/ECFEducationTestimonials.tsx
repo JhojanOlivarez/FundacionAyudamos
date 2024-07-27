@@ -19,7 +19,7 @@ const testimonies: Testimony[] = [
     id: 1,
     name: "Ana María Gómez",
     role: "Estudiante de Ingeniería",
-    image:"/assets/programs/ECPEducacion/TestimonioAna.avif",
+    image:"https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/TestimonioAna.avif?t=2024-07-27T19%3A00%3A36.692Z",
     quote: "Gracias a la beca de ECF Educación, pude cumplir mi sueño de estudiar ingeniería. Su apoyo ha sido fundamental en mi desarrollo académico y personal.",
     program: "Becas Educativas",
     region: "Antioquia"
@@ -28,7 +28,7 @@ const testimonies: Testimony[] = [
     id: 2,
     name: "Carlos Rodríguez",
     role: "Emprendedor",
-    image:"/assets/programs/ECPEducacion/TestimonioCarlos.avif",
+    image:"https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/TestimonioCarlos.avif?t=2024-07-27T19%3A00%3A45.203Z",
     quote: "Los cursos de desarrollo personal me dieron las herramientas que necesitaba para lanzar mi propio negocio. Estoy eternamente agradecido con ECF.",
     program: "Cursos de Desarrollo Personal",
     region: "Valle del Cauca"
@@ -37,7 +37,7 @@ const testimonies: Testimony[] = [
     id: 3,
     name: "Lucía Martínez",
     role: "Estudiante de Secundaria",
-    image: "/assets/programs/ECPEducacion/TestimonioLucia.avif",
+    image: "https://curmgtrnrpyjsizyhdzy.supabase.co/storage/v1/object/public/landing-bucket/EmpoweringFundation/Programs/EcpEducacion/TestimonioLucia.avif?t=2024-07-27T19%3A00%3A52.517Z",
     quote: "El programa de tutorías me ayudó a mejorar mis calificaciones y mi confianza. Ahora me siento preparada para enfrentar cualquier desafío académico.",
     program: "Programas de Tutoría",
     region: "Cundinamarca"
